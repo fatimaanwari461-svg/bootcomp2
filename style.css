@@ -335,7 +335,8 @@ left:75px;
     left:270px;
 }
 .ttt{
-   background-color: #000000;
+   
+    background-color:black;
     color: white;
     border-radius: 50%;
     padding: 5px 5px ;
