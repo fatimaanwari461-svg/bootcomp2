@@ -2,11 +2,7 @@ body{
 padding: 0px;
 margin:0px;
 }
-*{
-    box-sizing:border-box;
-     font-size: 16px;
-    
-}
+
 .navbar{
 display: flex;
 padding: 15px;
@@ -127,7 +123,7 @@ padding: 10px;
 }
 
 .box2{
-    margin-left:430px;
+    margin-left:450px;
 }
 .omid{
     display:grid;
@@ -453,6 +449,7 @@ color: white;
 background-color: black;
 border-radius: 25px;
 border: none;
+  padding: 50px;  
 }
 .mik{
     display: flex;
