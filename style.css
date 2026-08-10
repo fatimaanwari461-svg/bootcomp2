@@ -440,7 +440,7 @@ padding-bottom: 65px;
     height: 570px;
     border-radius: 20px;
     border: none;
-    padding: 21px;
+    padding: 50px;
     margin-left: 50px;
 }
 .hosin1 button{
@@ -449,7 +449,7 @@ color: white;
 background-color: black;
 border-radius: 25px;
 border: none;
-  padding: 50px;  
+    
 }
 .mik{
     display: flex;
