@@ -830,186 +830,1058 @@ small{
     cursor: pointer;
 }
 
+/* =========================================================
+   RESPONSIVE CSS
+   Keep this AFTER all your existing CSS
+   ========================================================= */
 
-/* ==========================
-   Responsive Design
-========================== */
+* {
+    box-sizing: border-box;
+}
 
-/* Tablets */
-@media (max-width: 992px) {
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
-    .navbar{
+img {
+    max-width: 100%;
+}
+
+
+/* =========================================================
+   TABLET / IPAD
+   768px - 1024px
+   ========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    /* NAVBAR */
+    .navbar {
+        width: 100%;
+        padding: 15px 25px;
+        align-items: center;
+        justify-content: space-between;
         flex-wrap: wrap;
+    }
+
+    .navbar img {
+        width: 110px;
+        height: 35px;
+    }
+
+    .navbarmenu {
+        gap: 15px;
+        padding: 0;
+        margin: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #navbtn {
+        margin-left: 0;
+    }
+
+
+    /* HERO */
+    .back {
+        width: 100%;
+        height: auto;
+        min-height: 500px;
+    }
+
+    .card {
+        width: 100%;
+        padding: 50px 30px;
+    }
+
+    .card h1 {
+        font-size: 55px;
+        line-height: 1.1;
+    }
+
+    .card p {
+        font-size: 16px;
+        max-width: 650px;
+        margin: 20px auto;
+    }
+
+    .text1 {
+        flex-wrap: wrap;
+    }
+
+
+    /* BOX */
+    .box {
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+        padding: 25px;
+        gap: 30px;
+    }
+
+    .box2 {
+        margin-left: 0;
+    }
+
+    .card3 {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+
+    /* GRID CARDS */
+    .omid {
+        width: 100%;
+        padding: 25px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .omid4 {
+        grid-column: span 2;
+    }
+
+    .image1 img {
+        height: 280px;
+    }
+
+
+    /* IMAGE + TEXT SECTION */
+    .taira {
+        width: 100%;
+        padding: 40px 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .taira1,
+    .note {
+        width: 100%;
+    }
+
+    .taira1 {
+        height: 650px;
+    }
+
+    .note {
+        margin-top: 0;
+    }
+
+
+    /* GALLERY */
+    .nawid {
+        width: calc(100% - 50px);
+        margin: 40px 25px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 180px;
+    }
+
+    .zaira1,
+    .zaira2,
+    .zaira3 {
+        grid-column: span 2;
+        padding-bottom: 0;
+    }
+
+    .zaira4,
+    .zaira5 {
+        grid-column: span 2;
+    }
+
+
+    /* LARGE IMAGE SECTION */
+    .hosin {
+        width: 100%;
+        height: 700px;
+        margin-top: 100px;
+        padding: 30px;
+    }
+
+    .hosin1 {
+        width: 420px;
+        height: auto;
+        min-height: 500px;
+        margin-left: 20px;
+        padding: 40px;
+    }
+
+
+    /* TITLE */
+    .mik {
+        width: 100%;
+        padding: 25px;
+        display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 15px;
     }
 
-    .navbarmenu{
-        gap: 0.8rem;
-        padding: 0;
-        margin-top: 15px;
+    #namira {
+        margin-left: 0;
     }
 
-    #navbtn{
+
+    /* PRODUCT / COURSE CARDS */
+    .cry {
+        width: calc(100% - 40px);
+        margin: 30px 20px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    #dollar {
         margin-left: auto;
     }
 
-    .text{
+
+    /* BLUE SECTION */
+    .backg {
+        width: 100%;
         height: auto;
-        padding: 50px 20px;
+        min-height: 1000px;
+        padding-bottom: 60px;
     }
 
-    .card h1{
-        font-size: 55px;
+
+    /* TESTIMONIAL / PEOPLE */
+    .mar {
+        width: 100%;
+        padding: 0 20px;
     }
 
-    .card p{
-        font-size: 24px;
+    .mariam {
+        margin: 30px 10px;
     }
 
-    .box{
-        flex-direction: column;
-        gap: 2rem;
-        margin-top: 60px;
-        text-align: center;
+
+    /* BLACK STATISTICS SECTION */
+    .didi {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
     }
 
-    .card3{
+    .didi1 {
         margin-left: 0;
+    }
+
+
+    /* BLOG */
+    .bdbd {
         width: 100%;
-        height: auto;
+        padding: 25px;
+        display: flex;
+        justify-content: space-between;
     }
 
-    .card3 img{
+    #erer {
+        margin-left: 0;
+        margin-top: 70px;
+    }
+
+    .jk {
         width: 100%;
-        height: auto;
+        padding: 25px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 
-    .image{
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-}
-
-
-/* Mobile */
-@media (max-width: 768px){
-
-    .navbar{
-        flex-direction: column;
-        align-items: center;
+    .bmw {
+        width: 100%;
     }
 
-    .navbar img{
-        margin-bottom: 15px;
+    .bmw img {
+        width: 100%;
+        height: 280px;
     }
 
-    .navbarmenu{
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
+
+    /* CTA IMAGE */
+    .ggg {
+        width: calc(100% - 80px);
+        height: 300px;
+        margin-left: 40px;
     }
 
-    #navbtn,
-    #navbtn2{
-        margin: 10px 0;
-        display: inline-block;
-    }
-    
-    .text{
-        padding: 40px 15px;
-        height: auto;
+
+    /* FOOTER */
+    footer {
+        margin-top: 130px;
+        width: 100%;
     }
 
-    .card h1{
-        font-size: 42px;
-        line-height: 1.2;
+    .qwqw1 {
+        width: 100%;
+        margin-left: 0;
+        padding: 40px 25px;
     }
 
-    .card p{
-        font-size: 20px;
+    .aaa {
+        width: calc(100% - 50px);
+        margin: 0 25px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
     }
 
-    .text1{
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .card1,
-    .card2{
-        width: 220px;
-        text-align: center;
-    }
-
-    .box{
-        flex-direction: column;
-        gap: 30px;
-        padding: 15px;
+    .bbb {
         margin-top: 50px;
     }
 
-    .image{
+    .subscribe {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .last {
+        width: calc(100% - 40px);
+        margin: 20px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   0px - 767px
+   ========================================================= */
+
+@media screen and (max-width: 767px) {
+
+    /* GENERAL */
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        line-height: 1.15;
+    }
+
+
+    /* =====================================================
+       NAVBAR
+       ===================================================== */
+
+    .navbar {
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .navbar img {
+        width: 110px;
+        height: 35px;
+    }
+
+    .navbarmenu {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbarmenu li {
+        list-style: none;
+    }
+
+    .navbarmenu a {
+        font-size: 14px;
+    }
+
+    #navbtn {
+        margin-left: 0;
+        padding: 8px 18px;
+    }
+
+    #navbtn2 {
+        padding: 8px 18px;
+    }
+
+
+    /* =====================================================
+       HERO
+       ===================================================== */
+
+    .back {
+        width: 100%;
+        height: auto;
+        min-height: 520px;
+    }
+
+    .text {
+        width: 100%;
+        padding: 30px 18px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card h1 {
+        font-size: 38px;
+        line-height: 1.1;
+        margin: 20px 0;
+    }
+
+    .card p {
+        font-size: 15px;
+        line-height: 1.6;
+        padding: 0 5px;
+    }
+
+    .card button {
+        margin-top: 25px;
+    }
+
+    .text1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin-top: 25px;
+    }
+
+    .card1,
+    .card2 {
+        width: auto;
+        text-align: center;
+    }
+
+
+    /* =====================================================
+       BOX
+       ===================================================== */
+
+    .box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 50px;
+        padding: 15px;
+    }
+
+    .box2 {
+        margin-left: 0;
+    }
+
+    .card3 {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+
+    /* =====================================================
+       CARD GRID
+       ===================================================== */
+
+    .omid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    .omid4 {
+        grid-column: span 1;
+    }
+
+    .omid2 {
+        width: 100%;
+    }
+
+    .image1 img {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+    }
+
+    .omid2 h2 {
+        font-size: 21px;
+        margin-left: 15px;
+    }
+
+    .omid2 p {
+        font-size: 14px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+
+    /* =====================================================
+       TAGS ON IMAGES
+       ===================================================== */
+
+    .black,
+    .black2,
+    .black3,
+    .black4,
+    .black5 {
+        left: 15px;
+        margin-left: 0;
+        top: 12px;
+    }
+
+    .white1,
+    .white2,
+    .white3,
+    .white4,
+    .white5 {
+        left: 110px;
+        margin-left: 0;
+        top: 12px;
+    }
+
+
+    /* =====================================================
+       TAIRA SECTION
+       ===================================================== */
+
+    .taira {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 15px;
+        margin-top: 50px;
+        gap: 30px;
+    }
+
+    .taira1 {
+        width: 100%;
+        height: 500px;
+        position: relative;
+    }
+
+    .note {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .big {
+        width: 220px;
+        height: 300px;
+        left: 50%;
+        top: 80px;
+        transform: translateX(-50%);
+    }
+
+    .top {
+        width: 140px;
+        height: 110px;
+        right: 0;
+        top: 20px;
+    }
+
+    .bottom {
+        width: 140px;
+        height: 110px;
+        left: 0;
+        bottom: 30px;
+    }
+
+
+    /* TAGS */
+    .tag {
+        padding: 8px 12px;
+        font-size: 11px;
+        z-index: 5;
+    }
+
+    .tag1 {
+        top: 55px;
+        left: 50%;
+    }
+
+    .tag2 {
+        top: 160px;
+        left: 5px;
+    }
+
+    .tag3 {
+        top: 260px;
+        right: 0;
+    }
+
+    .tag4 {
+        top: 330px;
+        left: 5px;
+    }
+
+    .tag5 {
+        bottom: 50px;
+        left: 50%;
+    }
+
+
+    /* NOTE CARDS */
+    .note2 {
+        width: 100%;
+    }
+
+    .note3 {
+        width: 100%;
+        padding: 18px;
+        display: block;
+    }
+
+    .note3 h3 {
+        font-size: 19px;
+    }
+
+
+    /* =====================================================
+       GALLERY
+       ===================================================== */
+
+    .noria {
+        width: 100%;
+        margin-top: 50px;
+        padding: 0 15px;
+    }
+
+    .noria h1 {
+        font-size: 27px;
+    }
+
+    .noria p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .nawid {
+        width: calc(100% - 30px);
+        margin: 35px 15px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 150px;
+        gap: 10px;
+    }
+
+    .zaira1,
+    .zaira2,
+    .zaira3,
+    .zaira4,
+    .zaira5 {
+        grid-column: span 1;
+        padding-bottom: 0;
+    }
+
+    .nawid img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /* =====================================================
+       HOSIN
+       ===================================================== */
+
+    .hosin {
+        width: 100%;
+        height: 600px;
+        min-height: 600px;
+        margin-top: 80px;
+        padding: 20px;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hosin1 {
+        width: 100%;
+        max-width: 380px;
+        height: auto;
+        min-height: 450px;
+        margin-left: 0;
+        padding: 30px 25px;
+    }
+
+
+    /* =====================================================
+       MIK
+       ===================================================== */
+
+    .mik {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 20px 15px;
+        margin-top: 50px;
+    }
+
+    #namira {
+        margin-left: 0;
+    }
+
+    .mik1 h1 {
+        font-size: 32px;
+    }
+
+
+    /* =====================================================
+       FILTER BUTTONS
+       ===================================================== */
+
+    .mark {
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .mark1 a,
+    #mark2 {
+        display: inline-block;
+        padding: 8px 16px;
+    }
+
+
+    /* =====================================================
+       CRY CARDS
+       ===================================================== */
+
+    .cry {
+        width: calc(100% - 30px);
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin: 25px 15px;
+    }
+
+    .sad {
+        width: 100%;
+    }
+
+    .content11 h2 {
+        font-size: 22px;
+        margin-left: 15px;
+    }
+
+    .details {
+        font-size: 16px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #dollar {
+        margin-left: auto;
+        margin-right: 15px;
+    }
+
+    .bottom {
+        width: 100%;
+    }
+
+
+    /* =====================================================
+       BLUE SECTION
+       ===================================================== */
+
+    .backg {
+        width: 100%;
+        height: auto;
+        min-height: 900px;
+        padding: 30px 15px 60px;
+    }
+
+    #maneger {
+        margin-top: 20px;
+    }
+
+    .staf {
+        margin-top: 30px;
+    }
+
+    .mar {
+        width: 100%;
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .image1,
-    .image2{
-        width: 220px;
+    .mariam {
+        width: 100%;
+        max-width: 320px;
+        height: 350px;
+        margin: 25px 0;
+    }
+
+
+    /* =====================================================
+       BLACK STATISTICS
+       ===================================================== */
+
+    .didi {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin-top: 40px;
+    }
+
+    .didi1 {
+        width: 100%;
+        margin-left: 0;
+        padding: 25px 20px;
+        border-right: none;
+        border-bottom: 1px solid #3e3c3c;
+    }
+
+    .didi1 h1 {
+        font-size: 36px;
+    }
+
+
+    /* =====================================================
+       BLOG TITLE
+       ===================================================== */
+
+    .bdbd {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 15px;
+        margin-top: 40px;
+        gap: 20px;
+    }
+
+    .bdbd1 h1 {
+        font-size: 34px;
+    }
+
+    #dsds {
+        font-size: 16px;
+    }
+
+    #erer {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+
+    /* =====================================================
+       BLOG CARDS
+       ===================================================== */
+
+    .jk {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .bmw {
+        width: 100%;
+    }
+
+    .bmw img {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+    }
+
+    .bmw h3 {
+        font-size: 20px;
+    }
+
+
+    /* =====================================================
+       CTA
+       ===================================================== */
+
+    .ggg {
+        position: relative;
+        width: calc(100% - 30px);
+        height: 250px;
+        margin: 50px 15px 0;
+        background-position: center;
+    }
+
+
+    /* =====================================================
+       FOOTER
+       ===================================================== */
+
+    footer {
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    .qwqw1 {
+        width: 100%;
+        margin-left: 0;
+        padding: 40px 20px;
         text-align: center;
     }
 
-    .image1 a,
-    .image2 a{
-        display: block;
+    .qwqw1 h1 {
+        font-size: 28px;
     }
 
-    .card3{
+    .aaa {
         width: 100%;
-        margin: 0;
+        margin-left: 0;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 20px;
     }
 
-    .card3 img{
+    .bbb {
+        margin-top: 30px;
+    }
+
+    .bbb h3 {
+        font-size: 17px;
+    }
+
+    .bbb p,
+    .bbb a {
+        font-size: 14px;
+    }
+
+    .subscribe {
         width: 100%;
-        height: auto;
-        border-radius: 20px;
+        max-width: 100%;
+        height: 55px;
     }
 
+    .subscribe input {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .sendbt {
+        flex-shrink: 0;
+    }
+
+
+    /* =====================================================
+       FOOTER BOTTOM
+       ===================================================== */
+
+    .last {
+        width: calc(100% - 30px);
+        margin: 15px;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .last a {
+        margin: 5px;
+        font-size: 13px;
+    }
 }
 
 
-/* Small Mobile */
-@media (max-width: 480px){
+/* =========================================================
+   VERY SMALL PHONES
+   320px - 400px
+   ========================================================= */
 
-    .card h1{
+@media screen and (max-width: 400px) {
+
+    .card h1 {
         font-size: 32px;
     }
 
-    .card p{
-        font-size: 18px;
+    .card p {
+        font-size: 14px;
     }
 
-    .navbar img{
-        width: 90px;
-        height: auto;
+    .navbar {
+        padding: 12px;
+    }
+
+    .navbarmenu {
+        gap: 8px;
+    }
+
+    .navbarmenu a {
+        font-size: 13px;
     }
 
     #navbtn,
-    #navbtn2{
-        width: 180px;
+    #navbtn2 {
+        padding: 7px 14px;
+        font-size: 13px;
+    }
+
+    .big {
+        width: 190px;
+        height: 280px;
+    }
+
+    .top,
+    .bottom {
+        width: 120px;
+        height: 95px;
+    }
+
+    .taira1 {
+        height: 450px;
+    }
+
+    .tag {
+        font-size: 10px;
+        padding: 7px 9px;
+    }
+
+    .nawid {
+        grid-auto-rows: 120px;
+    }
+
+    .aaa {
+        grid-template-columns: 1fr;
+    }
+
+    .bbb {
         text-align: center;
     }
 
-    .card1,
-    .card2{
-        width: 180px;
-    }
-
-    .image1,
-    .image2{
-        width: 180px;
+    .subscribe {
+        margin: auto;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+    
+  
 
